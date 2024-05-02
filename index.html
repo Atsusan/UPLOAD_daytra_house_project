@@ -6,25 +6,24 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="format-detection" content="telephone=no"><!-- 電話のリンクをしない設定 -->
-
-	<title>タイトル</title>
-	<meta name="description" content="説明文" />
+	<title>デイトラハウス</title>
+	<meta name="description" content="業界最安級のWebスキル特化型オンラインスクールのシェアハウス" />
 	<meta name="robots" content="noindex" /><!-- 開発終了時 削除 -->
 	<meta name="googlebot" content="noindex"><!-- 開発終了時 削除 -->
 
-	<meta name="description" content="説明文"><!-- 概要欄 -->
-	<meta property="og:title" content="タイトル"><!-- OGPタイトル -->
+	<meta name="description" content="業界最安級のWebスキル特化型オンラインスクールのシェアハウス"><!-- 概要欄 -->
+	<meta property="og:title" content="デイトラハウス"><!-- OGPタイトル -->
 	<meta property="og:type" content="website">
-	<meta property="og:url" content="https://example.com/"><!-- OGPサイトURL -->
+	<meta property="og:url" content="https://daily-trial-house.netlify.app/"><!-- OGPサイトURL -->
 	<meta property="og:image" content="https://example.com/img/ogp.png"><!-- OGPサムネイル -->
-	<meta property="og:site_name" content="タイトル"><!-- OGPサイトネーム -->
-	<meta property="og:description" content="説明文"><!-- OGPサイトの概要欄 -->
+	<meta property="og:site_name" content="デイトラハウス"><!-- OGPサイトネーム -->
+	<meta property="og:description" content="業界最安級のWebスキル特化型オンラインスクールのシェアハウス"><!-- OGPサイトの概要欄 -->
 	<meta name="twitter:card" content="summary_large_image"><!-- OGP Twitterカード -->
 
 	<!-- Google Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
 	<!-- CSS -->
 	<link rel="stylesheet" href="./assets/css/style.css">
 	<!-- jQuery -->
@@ -38,7 +37,167 @@
 </head>
 
 <body>
-	test
+	<!-- ▼ p-header -->
+	<header class="l-header p-header">
+		<div class="l-inner--large p-header__inner">
+			<h1 class="p-header__logo">
+				<a href="./" class="p-header__logoLink">
+					<img src="./assets/images/icon/logo.svg" alt="デイトラハウス" class="p-header__logoImg">
+				</a>
+			</h1>
+			<nav class="p-header__nav u-dispNone--flexPU">
+				<ul class="p-header__list">
+					<li class="p-header__item">
+						<a href="#about" class="p-header__itemLink">About</a>
+					</li>
+					<li class="p-header__item">
+						<a href="#news" class="p-header__itemLink">News</a>
+					</li>
+					<li class="p-header__item">
+						<a href="#event" class="p-header__itemLink">Event</a>
+					</li>
+					<li class="p-header__item">
+						<a href="#info" class="p-header__itemLink">Infomation</a>
+					</li>
+					<li class="p-header__item">
+						<a href="#voice" class="p-header__itemLink">入居者の声</a>
+					</li>
+				</ul>
+				<div class="p-header__conversion">
+					<div class="c-roundBtn--small">
+						<a href="#contact" class="c-roundBtn__link">お問い合わせ</a>
+					</div>
+				</div>
+			</nav>
+			<!-- ▼ drower menu -->
+			<div class="p-drower u-dispNone--PO">
+				<div class="js-openbtn p-drower__iconBox">
+					<span class="p-drower__icon"></span>
+				</div>
+				<nav id="js-g-nav" class="p-drower__nav">
+					<div id="js-g-nav-list" class="p-drower__listArea">
+						<ul class="p-drower__list">
+							<li class="p-drower__item">
+								<a class="p-drower__link" href="#about">About</a>
+							</li>
+							<li class="p-drower__item">
+								<a class="p-drower__link" href="#news">News</a>
+							</li>
+							<li class="p-drower__item">
+								<a class="p-drower__link" href="#event">Event</a>
+							</li>
+							<li class="p-drower__item">
+								<a class="p-drower__link" href="#info">Infomation</a>
+							</li>
+							<li class="p-drower__item">
+								<a class="p-drower__link" href="#voice">入居者の声</a>
+							</li>
+						</ul>
+						<div class="p-drower__btnArea">
+							<!-- ▼ c-roundBtn -->
+							<div class="c-roundBtn">
+								<a href="#contact" class="c-roundBtn__link">お問い合わせはこちら</a>
+							</div>
+							<!-- ▲ c-roundBtn -->
+						</div>
+						<div class="p-drower__snsArea">
+							<!-- ▼ c-sns -->
+							<div class="c-sns">
+								<p class="c-sns__read">Follow me!</p>
+								<ul class="c-sns__list">
+									<li class="c-sns__item">
+										<a href="https://twitter.com/" class="c-sns__link" target="_blank">
+											<img src="./assets/images/icon/sns-x-drower.svg" alt="X" class="c-sns__icon" width="35" height="36">
+										</a>
+									</li>
+									<li class="c-sns__item">
+										<a href="https://www.instagram.com/" class="c-sns__link" target="_blank">
+											<img src="./assets/images/icon/sns-insta-drower.svg" alt="instagram" class="c-sns__icon" width="35" height="36">
+										</a>
+									</li>
+									<li class="c-sns__item">
+										<a href="https://youtube.com/" class="c-sns__link" target="_blank">
+											<img src="./assets/images/icon/sns-youtube-drower.svg" alt="youtube" class="c-sns__icon" width="39" height="28">
+										</a>
+									</li>
+								</ul>
+							</div>
+							<!-- ▲ c-sns -->
+						</div>
+
+					</div>
+				</nav>
+			</div>
+			<!-- ▲ drower menu -->
+		</div>
+	</header>
+	<!-- ▲ p-header -->
+
+	<!-- ▼ main -->
+	<main class="top">
+		<!-- ▼ p-mv -->
+		<section class="p-mv">
+			<div class="l-inner p-mv__inner">
+				<div class="p-mv__col">
+					<div class="p-mv__txtContainer">
+						<div class="p-mv__txtBox">
+							<p class="p-mv__read">オンラインスクール運営のスキル実践型シェアハウス</p>
+							<h2 class="p-mv__mainText">
+								デイトラハウス<span class="p-mv__mainTextSp">で</span>
+								<br>
+								<span class="p-mv__mainTextLarge">仲間と共にWebスキル</span><span class="p-mv__mainTextSp">を</span>
+								<br>
+								身につけよう！
+							</h2>
+						</div>
+						<ul class="p-mv__pointList">
+							<li class="p-mv__pointItem">
+								<p class="p-mv__pointText">
+									デイトラ生
+									<span class="p-mv__pointTextLarge">限定</span>
+								</p>
+							</li>
+							<li class="p-mv__pointItem">
+								<p class="p-mv__pointText">
+									副業
+									<span class="p-mv__pointTextSmall">フリーランス</span>
+									<span class="p-mv__pointTextLarge">歓迎</span>
+								</p>
+							</li>
+							<li class="p-mv__pointItem">
+								<p class="p-mv__pointText--mtLarge">
+									個別相談
+									<br>
+									可能
+								</p>
+							</li>
+						</ul>
+						<div class="p-mv__btnContainer">
+							<p class="p-mv__btnText">無料見学会開催中！</p>
+							<div class="p-mv__btnBox">
+								<!-- ▼ c-roundBtn -->
+								<div class="c-roundBtn">
+									<a href="#contact" class="c-roundBtn__link">お問い合わせはこちら</a>
+								</div>
+								<!-- ▲ c-roundBtn -->
+							</div>
+						</div>
+					</div>
+					<div class="p-mv__imgContainer">
+						<img src="./assets/images/mv.jpg" alt="デイトラハウスで仲間と共にWebスキルを身につけよう！" class="p-mv__img" width="1522" height="1200">
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ▲ p-mv -->
+	</main>
+	<!-- ▲ main -->
+
+	<!-- ▼ p-footer -->
+	<footer class="l-footer p-footer">
+
+	</footer>
+	<!-- ▲ p-footer -->
 </body>
 
 </html>
