@@ -170,7 +170,10 @@ a {
 .c-sns__read {
 	display: flex;
 	justify-content: center;
+	margin: 0 auto;
 	position: relative;
+	width: -moz-fit-content;
+	width: fit-content;
 }
 
 .c-sns__read::before,
@@ -185,12 +188,12 @@ a {
 }
 
 .c-sns__read::before {
-	left: 1.4rem;
+	left: -1rem;
 	transform: translateY(-44%) rotate(-32deg);
 }
 
 .c-sns__read::after {
-	right: 1.4rem;
+	right: -1rem;
 	transform: translateY(-44%) rotate(32deg);
 }
 
@@ -459,6 +462,7 @@ a {
 
 .p-mv {
 	overflow-x: hidden;
+	position: relative;
 }
 
 .p-mv__inner {
@@ -593,6 +597,24 @@ a {
 	width: 100%;
 }
 
+.p-mv__bgImgLeftSP {
+	left: 0.4rem;
+	max-width: 9rem;
+	position: absolute;
+	top: 5.6rem;
+	width: 100%;
+	z-index: -1;
+}
+
+.p-mv__bgImgRightSP {
+	max-width: 6rem;
+	position: absolute;
+	right: 0.3rem;
+	top: 14.4rem;
+	width: 100%;
+	z-index: -1;
+}
+
 .u-separate {
 	margin-bottom: 24px;
 	margin-top: 24px;
@@ -640,7 +662,7 @@ a {
 @media screen and (min-width: 376px) and (max-width: 768px) {
 
 html {
-	font-size: 2.6595744681vw;
+	font-size: 2.6666666667vw;
 }
 
 }
@@ -709,8 +731,8 @@ html {
 
 .l-inner,
 .l-inner--large {
-	padding-left: 5%;
-	padding-right: 5%;
+	padding-left: 2rem;
+	padding-right: 2rem;
 }
 
 .l-inner--large {
@@ -756,6 +778,7 @@ html {
 
 .p-mv__read {
 	font-size: 1.4rem;
+	margin-right: calc(50% - 50vw);
 }
 
 .p-mv__mainText {
