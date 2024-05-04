@@ -210,6 +210,15 @@ a {
 	transition: opacity 0.3s;
 }
 
+.c-secondHeading {
+	color: #000;
+	font-size: 3.6rem;
+	font-weight: 700;
+	line-height: normal;
+	margin-left: -2rem;
+	text-align: center;
+}
+
 .p-header {
 	align-items: center;
 	background: rgba(255, 255, 255, 0.7);
@@ -615,6 +624,152 @@ a {
 	z-index: -1;
 }
 
+.p-about {
+	margin-top: 6.2rem;
+	overflow-x: hidden;
+}
+
+.p-about__inner {
+	position: relative;
+}
+
+.p-about__col {
+	align-items: center;
+	display: flex;
+	gap: 7.5rem;
+	margin-left: 4rem;
+	margin-top: 5.2rem;
+	position: relative;
+}
+
+.p-about__colImgBox {
+	max-width: 48.7rem;
+	width: 100%;
+}
+
+.p-about__colImg {
+	width: 100%;
+}
+
+.p-about__colContents {
+	max-width: 50rem;
+}
+
+.p-about__colTitle {
+	color: #000;
+	font-size: 3.2rem;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.p-about__colText {
+	color: #000;
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 3.3rem;
+	margin-top: 2.6rem;
+}
+
+.p-about__colBgImg {
+	left: -14.5rem;
+	max-width: 19.4rem;
+	position: absolute;
+	top: -7.5rem;
+	width: 100%;
+	z-index: -1;
+}
+
+.p-about__listArea {
+	background-color: #EBF3F6;
+	margin-top: 8.1rem;
+	padding: 6.5rem 2% 5.1rem;
+	position: relative;
+}
+
+.p-about__listHeading {
+	align-items: center;
+	color: #000;
+	display: flex;
+	font-size: 3.2rem;
+	font-weight: 500;
+	gap: 3.6rem;
+	justify-content: center;
+	line-height: normal;
+	position: relative;
+	text-align: center;
+}
+
+.p-about__listHeading::before,
+.p-about__listHeading::after {
+	background-color: #000;
+	content: "";
+	display: block;
+	height: 1px;
+	width: 10.1rem;
+}
+
+.p-about__listHeading::before {
+	left: 0;
+}
+
+.p-about__listHeading::after {
+	right: 0;
+}
+
+.p-about__list {
+	display: flex;
+	gap: 9rem;
+	justify-content: center;
+	margin: 0 auto;
+	margin-top: 6.5rem;
+	max-width: 82.1rem;
+}
+
+.p-about__item {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	min-height: 38.6rem;
+}
+
+.p-about__head {
+	max-width: 20rem;
+	width: 100%;
+}
+
+.p-about__headImg {
+	width: 100%;
+}
+
+.p-about__body {
+	margin-top: 2.5rem;
+}
+
+.p-about__bodyTitle {
+	color: #000;
+	font-size: 2rem;
+	font-weight: 500;
+	line-height: normal;
+	text-align: center;
+}
+
+.p-about__bodyText {
+	color: #000;
+	font-size: 1.4rem;
+	font-weight: 400;
+	line-height: normal;
+	margin: 0 auto;
+	margin-top: 1.3rem;
+}
+
+.p-about__listBgImg {
+	max-width: 15.9rem;
+	position: absolute;
+	right: -9.1%;
+	top: -21%;
+	width: 100%;
+}
+
 .u-separate {
 	margin-bottom: 24px;
 	margin-top: 24px;
@@ -667,15 +822,15 @@ html {
 
 }
 
-@media screen and (min-width: 769px) and (max-width: 1180px) {
+@media screen and (min-width: 769px) and (max-width: 1280px) {
 
 html {
-	font-size: 0.8474576271vw;
+	font-size: 0.78125vw;
 }
 
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 770px) {
 
 .c-roundBtn__link:hover::before {
 	opacity: 0;
@@ -727,7 +882,7 @@ html {
 
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 
 .l-inner,
 .l-inner--large {
@@ -745,6 +900,11 @@ html {
 	font-size: 2rem;
 	font-weight: 500;
 	line-height: normal;
+}
+
+.c-secondHeading {
+	font-size: 2.4rem;
+	margin-left: 0;
 }
 
 .p-header {
@@ -857,6 +1017,68 @@ html {
 	margin-right: auto;
 	margin-top: 0.5rem;
 	max-width: 30.1rem;
+}
+
+.p-about {
+	margin-top: 6.4rem;
+}
+
+.p-about__col {
+	flex-direction: column;
+	gap: 4.5rem;
+	margin-left: 0;
+	margin-top: 3.1rem;
+}
+
+.p-about__colImgBox {
+	margin-left: calc(50% - 50vw);
+	margin-right: calc(50% - 50vw);
+	width: 100vw;
+}
+
+.p-about__colTitle {
+	font-size: 2rem;
+}
+
+.p-about__colText {
+	font-size: 1.4rem;
+	margin-top: 1.4rem;
+}
+
+.p-about__listArea {
+	margin-top: 2.8rem;
+	padding: 3.5rem 2% 5.6rem;
+}
+
+.p-about__listHeading {
+	font-size: 2rem;
+}
+
+.p-about__listHeading::before,
+.p-about__listHeading::after {
+	display: none;
+}
+
+.p-about__list {
+	flex-direction: column;
+	gap: 6rem;
+	margin-top: 3.5rem;
+}
+
+.p-about__item {
+	min-height: unset;
+}
+
+.p-about__head {
+	margin: 0 auto;
+}
+
+.p-about__body {
+	margin-top: 2.4rem;
+}
+
+.p-about__bodyText {
+	max-width: 25.4rem;
 }
 
 .u-hidden-sp {
