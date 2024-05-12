@@ -32,10 +32,10 @@ $('a[href^="#"]').click(function(event) {
     if (!$target.length) return;
 
     // ヘッダーの高さを取得
-    const headerHeight = $(".header").outerHeight() || 0;
+    const headerHeight = $(".js-header").outerHeight() || 0;
 
     // 移動速度を指定（ミリ秒）
-    const speed = 300;
+    const speed = 400;
 
     // ターゲットの位置までスムーズにスクロール
     $("html, body").animate({
