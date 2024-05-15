@@ -1394,6 +1394,7 @@ a {
 }
 
 .p-contact__itemBox,
+.p-contact__itemBox--mtLargeSp,
 .p-contact__itemBox--mtNone {
 	margin-top: 1.8rem;
 }
@@ -1596,23 +1597,25 @@ a {
 
 .p-contact__message {
 	background-color: #fff;
+	border-radius: 1.1rem;
 	box-shadow: 0 3px 5px rgba(62, 62, 62, 0.2);
 	display: none;
 	font-size: 1.4rem;
 	height: 10rem;
-	margin-top: 0;
+	margin-top: 3.1rem;
 	padding: 4rem 0;
 	text-align: center;
 }
 
 .p-contact__message--error {
 	background-color: #fff;
+	border-radius: 1.1rem;
 	box-shadow: 0 3px 5px rgba(62, 62, 62, 0.2);
 	color: red;
 	display: none;
 	font-size: 1.4rem;
 	height: 10rem;
-	margin-top: 0;
+	margin-top: 3.1rem;
 	padding: 4rem 0;
 	text-align: center;
 }
@@ -2163,6 +2166,10 @@ html {
 }
 
 .p-contact {
+	padding: 5.7rem 0 5.4rem;
+}
+
+.p-contact {
 	background: linear-gradient(177deg, #98D5D9 1.53%, #4EB2D0 98.47%);
 }
 
@@ -2180,6 +2187,7 @@ html {
 
 .p-contact__read {
 	color: #fff;
+	text-align: left;
 }
 
 .p-contact__readMust {
@@ -2190,8 +2198,37 @@ html {
 	margin-top: 2.1rem;
 }
 
+.p-contact__itemBox--mtLargeSp {
+	margin-top: 3.3rem;
+}
+
 .p-contact__dtText {
 	color: #fff;
+}
+
+.p-contact__textarea {
+	min-height: 23.3rem;
+}
+
+.p-contact__agreementArea {
+	margin-top: 3.6rem;
+}
+
+.p-contact__agreementLabelSpan {
+	color: #fff;
+}
+
+.p-contact__agreementLabelSpan::before {
+	border: 1px solid #fff;
+}
+
+.p-contact__agreementLabelSpan::after {
+	border-bottom: 2px solid #fff;
+	border-right: 2px solid #fff;
+}
+
+.p-contact__agreementLabelLink::before {
+	display: none;
 }
 
 .u-hidden-sp {

@@ -1,20 +1,20 @@
 // ハンバーガーメニュー実装
-jQuery('.js-openbtn').click(function() {
-    jQuery(this).toggleClass('active'); // ボタン自身にactiveクラスを付与
-    jQuery('#js-g-nav').toggleClass('panelactive'); //ナビゲーションにpanelactiveクラスを付与
-    jQuery('.top').toggleClass('is-active');
+$('.js-openbtn').click(function() {
+    $(this).toggleClass('active'); // ボタン自身にactiveクラスを付与
+    $('#js-g-nav').toggleClass('panelactive'); //ナビゲーションにpanelactiveクラスを付与
+    $('.top').toggleClass('is-active');
 });
 
-jQuery('#js-g-nav a').click(function() {
-    jQuery('.js-openbtn').removeClass('active'); //ボタンのactiveクラスを削除
-    jQuery('#js-g-nav').removeClass('panelactive'); //ナビゲーションのpanelactiveクラスを削除
-    jQuery('.top').removeClass('is-active');
+$('#js-g-nav a').click(function() {
+    $('.js-openbtn').removeClass('active'); //ボタンのactiveクラスを削除
+    $('#js-g-nav').removeClass('panelactive'); //ナビゲーションのpanelactiveクラスを削除
+    $('.top').removeClass('is-active');
 });
 
-jQuery('#js-g-nav').click(function() { // 背面をクリックしたら解除する処置
-    jQuery('.js-openbtn').removeClass('active');
-    jQuery('#js-g-nav').removeClass('panelactive');
-    jQuery('.top').removeClass('is-active');
+$('#js-g-nav').click(function() { // 背面をクリックしたら解除する処置
+    $('.js-openbtn').removeClass('active');
+    $('#js-g-nav').removeClass('panelactive');
+    $('.top').removeClass('is-active');
 });
 
 // スムーススクロール実装
@@ -95,38 +95,38 @@ const mySwiper = new Swiper('.swiper', {
 
 // google form 連携
 let $form = $('#js-form');
-$form.submit(function(e) { 
-  $.ajax({ 
-   url: $form.attr('action'), 
-   data: $form.serialize(), 
-   type: "POST", 
-   dataType: "xml", 
-   statusCode: { 
-      0: function() { 
-        //送信に成功したときの処理 
+$form.submit(function(e) {
+  $.ajax({
+   url: $form.attr('action'),
+   data: $form.serialize(),
+   type: "POST",
+   dataType: "xml",
+   statusCode: {
+      0: function() {
+        //送信に成功したときの処理
         $form.slideUp();
         $('#js-success').slideDown();
-      }, 
-      200: function() { 
-        //送信に失敗したときの処理 
+      },
+      200: function() {
+        //送信に失敗したときの処理
         $('#js-error').slideDown();
       }
-    } 
+    }
   });
-  return false; 
-}); 
+  return false;
+});
 
 // formの入力確認
 let $submit = $('#js-submit');
 $('#js-form input, #js-form textarea').on( 'change', function() {
   if(
-    $( '#js-form input[name="entry.1600963404"]').val() !== "" &&
-    $( '#js-form input[name="entry.28646710"]').val() !== "" &&
+    $( '#js-form input[name="entry.745940773"]').val() !== "" &&
+    $( '#js-form input[name="entry.1220329111"]').val() !== "" &&
     // $( '#js-form input[name="entry.692740317"]').val() !== "" &&
     $( '#js-form input[name="emailAddress"]').val() !== "" &&
-    $( '#js-form textarea[name="entry.1420042681"]').val() !== "" &&
+    $( '#js-form textarea[name="entry.895616368"]').val() !== "" &&
    
-    $( '#js-form input[name="entry.2036359609"]').prop( 'checked') === true
+    $( '#js-form input[name="entry.364840234"]').prop( 'checked') === true
   ) {
     //全て入力された時
     $submit.prop('disabled', false);
