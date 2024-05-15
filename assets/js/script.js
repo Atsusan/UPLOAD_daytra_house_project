@@ -53,9 +53,9 @@ $('a[href^="#"]').click(function(event) {
 const mySwiper = new Swiper('.swiper', {
   // Optional parameters
   loop: true,
+  loopAdditionalSlides: 1,
   grabCursor: true,
   centeredSlides: true,
-  loopAdditionalSlides: 1,
   slidesPerView: 1,
   nested: true,
   watchSlidesProgress: true,
@@ -90,9 +90,49 @@ const mySwiper = new Swiper('.swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
- 
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
+});
+
+
+// google form 連携
+let $form = $('#js-form');
+$form.submit(function(e) { 
+  $.ajax({ 
+   url: $form.attr('action'), 
+   data: $form.serialize(), 
+   type: "POST", 
+   dataType: "xml", 
+   statusCode: { 
+      0: function() { 
+        //送信に成功したときの処理 
+        $form.slideUp();
+        $('#js-success').slideDown();
+      }, 
+      200: function() { 
+        //送信に失敗したときの処理 
+        $('#js-error').slideDown();
+      }
+    } 
+  });
+  return false; 
+}); 
+
+// formの入力確認
+let $submit = $('#js-submit');
+$('#js-form input, #js-form textarea').on( 'change', function() {
+  if(
+    $( '#js-form input[name="entry.1600963404"]').val() !== "" &&
+    $( '#js-form input[name="entry.28646710"]').val() !== "" &&
+    $( '#js-form input[name="entry.692740317"]').val() !== "" &&
+    $( '#js-form textarea[name="entry.1420042681"]').val() !== "" &&
+   
+    $( '#js-form input[name="entry.2036359609"]').prop( 'checked') === true
+  ) {
+    //全て入力された時
+    $submit.prop('disabled', false);
+    $submit.removeClass( '-disabled');
+  } else {
+    //入力されていない時
+    $submit.prop('disabled', true);
+    $submit.addClass( '-disabled');
+  }
 });

@@ -127,7 +127,6 @@
 							</div>
 							<!-- ▲ c-sns -->
 						</div>
-
 					</div>
 				</nav>
 			</div>
@@ -652,6 +651,82 @@
 			</div>
 		</section>
 		<!-- ▲ p-voice -->
+
+		<!-- ▼ p-contact -->
+		<section id="contact" class="p-contact">
+			<div class="p-contact__container">
+				<h2 class="p-contact__title">お問い合わせ</h2>
+				<p class="p-contact__read">
+					下記フォームに必須項目を入力して送信してください。
+					<br>
+					３営業日以内に担当者より折り返しご連絡させていただきます。
+				</p>
+				<p class="p-contact__readMust">※は入力必須項目になります。</p>
+				<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfTBTt-7go6uEArLQlL50WpzSiYb8sqEruK8XmqLNzWUMRuYg/formResponse" id="js-form" class="p-contact__form" method="post">
+					<dl class="p-contact__dl">
+						<div class="p-contact__itemBox--mtNone">
+							<dt class="p-contact__dt">
+								<p class="p-contact__dtText">お名前</p>
+								<span class="p-contact__dtMust">※</span>
+							</dt>
+							<dd class="p-contact__dd">
+								<input type="text" name="entry.1600963404" class="p-contact__input" required>
+							</dd>
+						</div>
+						<div class="p-contact__itemBox">
+							<dt class="p-contact__dt">
+								<p class="p-contact__dtText">ふりがな</p>
+								<span class="p-contact__dtMust">※</span>
+							</dt>
+							<dd class="p-contact__dd">
+								<input type="text" name="entry.28646710" class="p-contact__input" required>
+							</dd>
+						</div>
+						<div class="p-contact__itemBox">
+							<dt class="p-contact__dt">
+								<p class="p-contact__dtText">メールアドレス</p>
+								<span class="p-contact__dtMust">※</span>
+							</dt>
+							<dd class="p-contact__dd">
+								<input type="email" name="entry.692740317" class="p-contact__input" required>
+							</dd>
+						</div>
+						<div class="p-contact__itemBox">
+							<dt class="p-contact__dt">
+								<p class="p-contact__dtText">本文メッセージ</p>
+								<span class="p-contact__dtMust">※</span>
+							</dt>
+							<dd class="p-contact__dd">
+								<textarea class="p-contact__textarea" name="entry.1420042681"></textarea>
+							</dd>
+						</div>
+					</dl>
+					<div class="p-contact__agreementArea">
+						<label class="p-contact__agreementLabel">
+							<input type="checkbox" name="entry.2036359609" class="p-contact__agreementInput">
+							<span class="p-contact__agreementLabelSpan">
+								<a href="#" class="p-contact__agreementLabelLink">
+									プライバシーポリシー
+								</a>
+								に同意する
+							</span>
+						</label>
+					</div>
+					<div class="p-contact__btnBox">
+						<button id="js-submit" class="p-contact__btn -disabled" type="submit" name="button" value="送信" disabled>送信する</button>
+					</div>
+				</form>
+				<!-- message -->
+				<div id="js-success" class="p-contact__message">
+					<p>送信完了しました。ありがとうございました。</p>
+				</div>
+				<div id="js-error" class="p-contact__message--error">
+					<p>送信失敗しました。ページを更新して再度送信してください。</p>
+				</div>
+				<!-- message -->
+			</div>
+		</section>
+		<!-- ▲ p-contact -->
 
 	</main>
 	<!-- ▲ main -->
