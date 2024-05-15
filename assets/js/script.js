@@ -122,7 +122,8 @@ $('#js-form input, #js-form textarea').on( 'change', function() {
   if(
     $( '#js-form input[name="entry.1600963404"]').val() !== "" &&
     $( '#js-form input[name="entry.28646710"]').val() !== "" &&
-    $( '#js-form input[name="entry.692740317"]').val() !== "" &&
+    // $( '#js-form input[name="entry.692740317"]').val() !== "" &&
+    $( '#js-form input[name="emailAddress"]').val() !== "" &&
     $( '#js-form textarea[name="entry.1420042681"]').val() !== "" &&
    
     $( '#js-form input[name="entry.2036359609"]').prop( 'checked') === true
