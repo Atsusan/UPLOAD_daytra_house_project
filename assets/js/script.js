@@ -116,17 +116,17 @@ $form.submit(function(e) {
   return false;
 });
 
-// formの入力確認
+// // formの入力確認
 let $submit = $('#js-submit');
 $('#js-form input, #js-form textarea').on( 'change', function() {
   if(
     $( '#js-form input[name="entry.745940773"]').val() !== "" &&
     $( '#js-form input[name="entry.1220329111"]').val() !== "" &&
     // $( '#js-form input[name="entry.692740317"]').val() !== "" &&
-    $( '#js-form input[name="emailAddress"]').val() !== "" &&
+    $( '#js-form input[name="entry.1949003051"]').val() !== "" &&
     $( '#js-form textarea[name="entry.895616368"]').val() !== "" &&
    
-    $( '#js-form input[name="entry.364840234"]').prop( 'checked') === true
+    $( '#js-form input[name="checkbox"]').prop( 'checked') === true
   ) {
     //全て入力された時
     $submit.prop('disabled', false);
