@@ -207,6 +207,21 @@ a {
 	transform: translateY(-44%) rotate(32deg);
 }
 
+.c-sns--white .c-sns__x {
+	height: 2.6rem;
+	width: 2.5rem;
+}
+
+.c-sns--white .c-sns__insta {
+	height: 2.8rem;
+	width: 2.8rem;
+}
+
+.c-sns--white .c-sns__youtube {
+	height: 2.2rem;
+	width: 3.2rem;
+}
+
 .c-sns__read {
 	display: flex;
 	justify-content: center;
@@ -245,8 +260,25 @@ a {
 	margin-top: 1rem;
 }
 
+.c-sns__x {
+	height: 3.6rem;
+	width: 3.5rem;
+}
+
+.c-sns__insta {
+	height: 3.6rem;
+	width: 3.5rem;
+}
+
+.c-sns__youtube {
+	height: 2.8rem;
+	width: 3.9rem;
+}
+
 .c-sns__link {
-	display: block;
+	align-items: center;
+	display: flex;
+	justify-content: center;
 	transition: opacity 0.3s;
 }
 
