@@ -1,21 +1,35 @@
-// ハンバーガーメニュー実装
-$('.js-openbtn').click(function() {
-    $(this).toggleClass('active'); // ボタン自身にactiveクラスを付与
-    $('#js-g-nav').toggleClass('panelactive'); //ナビゲーションにpanelactiveクラスを付与
-    $('.top').toggleClass('is-active');
+// ハンバーガーメニュー
+$(document).ready(function() {
+  const toggleMenu = function() {
+      $('.js-openbtn').toggleClass('active');
+      $('#js-g-nav').toggleClass('panelactive');
+      $('.top').toggleClass('is-active');
+  };
+
+  const closeMenu = function() {
+      $('.js-openbtn').removeClass('active');
+      $('#js-g-nav').removeClass('panelactive');
+      $('.top').removeClass('is-active');
+  };
+
+  const checkWindowSize = function() {
+      if ($(window).width() >= 769) {
+          closeMenu();
+      }
+  };
+
+  $('.js-openbtn').click(toggleMenu);
+
+  $('#js-g-nav a').click(closeMenu);
+
+  $('#js-g-nav').click(closeMenu);
+
+  $(window).resize(checkWindowSize);
+
+  // 初回チェック
+  checkWindowSize();
 });
 
-$('#js-g-nav a').click(function() {
-    $('.js-openbtn').removeClass('active'); //ボタンのactiveクラスを削除
-    $('#js-g-nav').removeClass('panelactive'); //ナビゲーションのpanelactiveクラスを削除
-    $('.top').removeClass('is-active');
-});
-
-$('#js-g-nav').click(function() { // 背面をクリックしたら解除する処置
-    $('.js-openbtn').removeClass('active');
-    $('#js-g-nav').removeClass('panelactive');
-    $('.top').removeClass('is-active');
-});
 
 // スムーススクロール実装
 $('a[href^="#"]').click(function(event) {
@@ -48,7 +62,7 @@ $('a[href^="#"]').click(function(event) {
 
 // Swiper
 
-// JS 基本　初期化
+// JS 基本初期化
 
 const mySwiper = new Swiper('.swiper', {
   // Optional parameters
@@ -137,3 +151,6 @@ $('#js-form input, #js-form textarea').on( 'change', function() {
     $submit.addClass( '-disabled');
   }
 });
+
+
+
