@@ -761,6 +761,7 @@ a {
 	font-size: 3.2rem;
 	font-weight: 400;
 	line-height: normal;
+	white-space: nowrap;
 }
 
 .p-about__colText {
@@ -2080,6 +2081,7 @@ html {
 
 .p-about__colTitle {
 	font-size: 2rem;
+	white-space: normal;
 }
 
 .p-about__colText {
