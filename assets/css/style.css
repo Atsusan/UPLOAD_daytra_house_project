@@ -282,6 +282,10 @@ a {
 	transition: opacity 0.3s;
 }
 
+.c-sns__icon {
+	width: 100%;
+}
+
 .c-secondHeading,
 .c-secondHeading--mlNonefzLarge,
 .c-secondHeading--fzLargeSP,
