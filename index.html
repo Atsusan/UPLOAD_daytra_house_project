@@ -24,10 +24,17 @@
 	<!-- Swiper -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<!-- animate.css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<!-- CSS -->
 	<link rel="stylesheet" href="./assets/css/style.css">
+	<!-- GSAP -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
 	<!-- jQuery -->
 	<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+	<!-- WOW.js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 	<!-- main.js -->
 	<script src="./assets/js/script.js" defer></script>
 	<!-- ファビコンの設定 -->
@@ -68,45 +75,45 @@
 					</div>
 				</div>
 			</nav>
-			<!-- ▼ drower menu -->
-			<div class="p-drower u-dispNone--PO">
-				<div class="js-openbtn p-drower__iconBox">
-					<span class="p-drower__icon"></span>
+			<!-- ▼ drawer menu -->
+			<div class="p-drawer u-dispNone--PO">
+				<div class="js-openbtn p-drawer__iconBox">
+					<span class="p-drawer__icon"></span>
 				</div>
-				<nav id="js-g-nav" class="p-drower__nav">
-					<div id="js-g-nav-list" class="p-drower__listArea">
-						<ul class="p-drower__list">
-							<li class="p-drower__item">
-								<a class="p-drower__link" href="#about">About</a>
+				<nav id="js-g-nav" class="p-drawer__nav">
+					<div id="js-g-nav-list" class="p-drawer__listArea">
+						<ul class="p-drawer__list">
+							<li class="p-drawer__item">
+								<a class="p-drawer__link" href="#about">About</a>
 							</li>
-							<li class="p-drower__item">
-								<a class="p-drower__link" href="#news">News</a>
+							<li class="p-drawer__item">
+								<a class="p-drawer__link" href="#news">News</a>
 							</li>
-							<li class="p-drower__item">
-								<a class="p-drower__link" href="#event">Event</a>
+							<li class="p-drawer__item">
+								<a class="p-drawer__link" href="#event">Event</a>
 							</li>
-							<li class="p-drower__item">
-								<a class="p-drower__link" href="#info">Information</a>
+							<li class="p-drawer__item">
+								<a class="p-drawer__link" href="#info">Information</a>
 							</li>
-							<li class="p-drower__item">
-								<a class="p-drower__link" href="#voice">入居者の声</a>
+							<li class="p-drawer__item">
+								<a class="p-drawer__link" href="#voice">入居者の声</a>
 							</li>
 						</ul>
-						<div class="p-drower__btnArea">
+						<div class="p-drawer__btnArea">
 							<!-- ▼ c-roundBtn -->
 							<div class="c-roundBtn">
 								<a href="#contact" class="c-roundBtn__link">お問い合わせはこちら</a>
 							</div>
 							<!-- ▲ c-roundBtn -->
 						</div>
-						<div class="p-drower__snsArea">
+						<div class="p-drawer__snsArea">
 							<!-- ▼ c-sns -->
 							<div class="c-sns">
 								<p class="c-sns__read">Follow me!</p>
 								<ul class="c-sns__list">
 									<li class="c-sns__item">
 										<a href="https://twitter.com/" class="c-sns__link c-sns__x" target="_blank">
-											<img src="./assets/images/icon/sns-x-drower.svg" alt="X" class="c-sns__icon" width="35" height="36">
+											<img src="./assets/images/icon/sns-x-drawer.svg" alt="X" class="c-sns__icon" width="35" height="36">
 										</a>
 									</li>
 									<li class="c-sns__item">
@@ -116,7 +123,7 @@
 									</li>
 									<li class="c-sns__item">
 										<a href="https://youtube.com/" class="c-sns__link  c-sns__youtube" target="_blank">
-											<img src="./assets/images/icon/sns-youtube-drower.svg" alt="youtube" class="c-sns__icon" width="39" height="28">
+											<img src="./assets/images/icon/sns-youtube-drawer.svg" alt="youtube" class="c-sns__icon" width="39" height="28">
 										</a>
 									</li>
 								</ul>
@@ -126,7 +133,7 @@
 					</div>
 				</nav>
 			</div>
-			<!-- ▲ drower menu -->
+			<!-- ▲ drawer menu -->
 		</div>
 	</header>
 	<!-- ▲ p-header -->
@@ -134,7 +141,7 @@
 	<!-- ▼ main -->
 	<main class="l-main">
 		<!-- ▼ p-mv -->
-		<section class="p-mv">
+		<section class="p-mv wow fadeIn">
 			<div class="l-inner p-mv__inner">
 				<div class="p-mv__col">
 					<div class="p-mv__txtContainer">
@@ -194,10 +201,10 @@
 		<!-- ▼ p-about -->
 		<section id="about" class="l-section p-about">
 			<div class="l-inner p-about__inner">
-				<div class="p-about__sectionBox">
-					<h2 class="c-secondHeading">デイトラハウスって？</h2>
+				<div class="p-about__sectionBox wow fadeIn">
+					<h2 class="c-secondHeading js-text">デイトラハウスって？</h2>
 				</div>
-				<div class="p-about__col">
+				<div class="p-about__col wow fadeIn">
 					<div class="p-about__colImgBox">
 						<img src="./assets/images/about-img.jpg" alt="自分らしく人生を歩む一歩に。" class="p-about__colImg" width="974" height="650">
 					</div>
@@ -216,7 +223,7 @@
 					</div>
 					<img src="./assets/images/about-bg1.png" alt="" class="p-about__colBgImg u-dispNone--PU" width="388" height="308">
 				</div>
-				<div class="p-about__listArea">
+				<div class="p-about__listArea wow fadeIn">
 					<h3 class="p-about__listHeading">デイトラハウスでできること</h3>
 					<ul class="p-about__list">
 						<li class="p-about__item">
@@ -262,12 +269,12 @@
 		<!-- ▲ p-about -->
 
 		<!-- ▼ p-news -->
-		<section id="news" class="p-news">
+		<section id="news" class="p-news wow fadeIn">
 			<div class="l-inner p-news__inner">
 				<div class="p-news__container">
 					<div class="p-news__headingBox">
 						<!-- ▼ c-secondHeading -->
-						<h2 class="c-secondHeading--fzLargeSP">News</h2>
+						<h2 class="c-secondHeading--fzLargeSP js-text">News</h2>
 						<!-- ▲ c-secondHeading -->
 					</div>
 					<ul class="p-news__list">
@@ -324,10 +331,10 @@
 		<!-- ▲ p-news -->
 
 		<!-- ▼ p-event -->
-		<section id="event" class="p-event">
+		<section id="event" class="p-event wow fadeIn">
 			<div class="l-inner">
 				<div class="p-event__sectionBox">
-					<h2 class="c-secondHeading--mlNonefzLarge">Event</h2>
+					<h2 class="c-secondHeading--mlNonefzLarge js-text">Event</h2>
 				</div>
 				<ul class="p-event__list">
 					<li class="p-event__itemCol">
@@ -401,7 +408,7 @@
 		<section id="info" class="p-info">
 			<div class="l-inner--spPaddingLarge">
 				<div class="p-info__sectionBox">
-					<h2 class="c-secondHeading--white">Information</h2>
+					<h2 class="c-secondHeading--white js-text">Information</h2>
 				</div>
 				<ul class="p-info__list">
 					<li class="p-info__item--mlNoneSpMtNone">
@@ -452,10 +459,10 @@
 		<!-- ▲ p-info -->
 
 		<!-- ▼ p-voice -->
-		<section id="voice" class="p-voice">
+		<section id="voice" class="p-voice wow fadeInUp">
 			<div class="p-voice__inner">
 				<div class="p-voice__sectionBox">
-					<h2 class="c-secondHeading--fzSmall">入居者の声</h2>
+					<h2 class="c-secondHeading--fzSmall js-text">入居者の声</h2>
 				</div>
 				<!-- Slider main container -->
 				<div class="swiper p-voice__swiper">
@@ -649,9 +656,9 @@
 		<!-- ▲ p-voice -->
 
 		<!-- ▼ p-contact -->
-		<section id="contact" class="p-contact">
+		<section id="contact" class="p-contact wow fadeIn">
 			<div class="p-contact__container">
-				<h2 class="p-contact__title">お問い合わせ</h2>
+				<h2 class="p-contact__title js-text">お問い合わせ</h2>
 				<p class="p-contact__read">
 					下記フォームに必須項目を入力して送信してください。
 					<br>

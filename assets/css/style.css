@@ -415,13 +415,13 @@ a {
 	transform: scale(1, 1); /*X方向にスケール拡大*/
 }
 
-.p-drower {
+.p-drawer {
 	margin-left: auto;
 	position: relative;
 	z-index: 100; /* ドロワー共通CSS */ /* アイコン位置 */ /* アイコン */ /* ナビゲーションのためのCSS */ /* ナビゲーション */
 }
 
-.p-drower__list {
+.p-drawer__list {
 	display: flex;
 	flex-direction: column;
 	gap: 3rem;
@@ -429,31 +429,31 @@ a {
 	margin-top: 3.2rem;
 }
 
-.p-drower__link {
+.p-drawer__link {
 	color: #707070;
 	font-size: 2rem;
 	font-weight: 500;
 	line-height: normal;
 }
 
-.p-drower__listArea {
+.p-drawer__listArea {
 	height: 100%;
 	overflow: auto;
 	padding: 0 2.5rem;
 	padding-bottom: 5rem;
 }
 
-.p-drower__btnArea {
+.p-drawer__btnArea {
 	margin-top: 2.8rem;
 }
 
-.p-drower__snsArea {
+.p-drawer__snsArea {
 	display: flex;
 	justify-content: center;
 	margin-top: 3rem;
 }
 
-.p-drower__iconBox {
+.p-drawer__iconBox {
 	cursor: pointer;
 	height: 2.3rem;
 	margin-left: auto;
@@ -462,7 +462,7 @@ a {
 	z-index: 100;
 }
 
-.p-drower__icon {
+.p-drawer__icon {
 	background-color: #000;
 	border-radius: 10px;
 	display: inline-block;
@@ -475,8 +475,8 @@ a {
 	width: 100%;
 }
 
-.p-drower__icon::before,
-.p-drower__icon::after {
+.p-drawer__icon::before,
+.p-drawer__icon::after {
 	background-color: #000;
 	border-radius: 10px;
 	content: "";
@@ -487,39 +487,39 @@ a {
 	width: 100%;
 }
 
-.p-drower__icon::before {
+.p-drawer__icon::before {
 	top: -1rem;
 }
 
-.p-drower__icon::after {
+.p-drawer__icon::after {
 	top: 1rem;
 }
 
-.js-openbtn.active .p-drower__icon {
+.js-openbtn.active .p-drawer__icon {
 	background-color: transparent;
 	transition: all 0.4s;
 }
 
-.js-openbtn.active .p-drower__icon::before {
+.js-openbtn.active .p-drawer__icon::before {
 	background-color: #000;
 	left: 0;
 	top: 50%;
 	transform: translateY(-50%) rotate(-45deg);
 }
 
-.js-openbtn.active .p-drower__icon::after {
+.js-openbtn.active .p-drawer__icon::after {
 	background-color: #000;
 	left: 0;
 	top: 50%;
 	transform: translateY(-50%) rotate(45deg);
 }
 
-.p-drower__list { /* ナビゲーション天地中央揃え */
+.p-drawer__list { /* ナビゲーション天地中央揃え */
 }
 
 /* ナビゲーションの縦スクロール */
 
-#js-g-nav.panelactive .p-drower-listArea {
+#js-g-nav.panelactive .p-drawer-listArea {
 	-webkit-overflow-scrolling: touch;
 	height: 100%;
 	overflow: auto; /* ナビの数が増えた場合の縦スクロール処理 */
@@ -530,7 +530,7 @@ a {
 
 /* ここまで ドロワー共通CSS */
 
-.p-drower__nav {
+.p-drawer__nav {
 	background: #fff;
 	height: calc(100% - 5.6rem); /* ナビの高さ */ /* position: fixd;にし、z-indexの数値を大きくして前面へ */
 	position: fixed;
@@ -1797,6 +1797,10 @@ a {
 
 .u-dispNone--flexPO {
 	display: none;
+}
+
+.js-text span {
+	display: inline-block;
 }
 
 @media screen and (min-width: 376px) and (max-width: 768px) {
