@@ -1,3 +1,6 @@
+// アラート
+alert("このLPは架空のサイトです。");
+
 // ハンバーガーメニュー
 $(document).ready(function () {
   const toggleMenu = function () {
